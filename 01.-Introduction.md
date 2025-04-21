@@ -1,0 +1,4 @@
+**PHPico** is a lightweight, functional PHP microframework created with a clear goal:  
+to offer everything you need to start real-world projects, while staying fast, transparent, and minimal.
+
+It is built on native PHP features, follows modern best practices, and lets you extend it freely without getting in your way.
