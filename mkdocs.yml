@@ -2,6 +2,7 @@ site_name: NixPHP
 site_description: A modern, minimalist PHP microframework
 theme:
   name: material
+  logo: assets/nixphp-logo-small.png
   palette:
     - scheme: default
       primary: grey
@@ -15,6 +16,18 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - navigation.instant
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - search.highlight
+    - search.suggest
 
 nav:
   - Introduction: index.md
