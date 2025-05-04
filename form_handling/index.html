@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../views/">
       
       
-        <link rel="next" href="../routing/">
+        <link rel="next" href="../database/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Configuration - NixPHP</title>
+        <title>Form Handling - NixPHP</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration" class="md-skip">
+        <a href="#form-handling" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Form Handling
             
           </span>
         </div>
@@ -299,32 +299,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Configuration
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -335,98 +313,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-env-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using .env Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing Environment Variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environment Detection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-configuration-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing Configuration Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#internals-how-configuration-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      Internals: How Configuration Works
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-setting-error-display-based-on-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Setting Error Display Based on Environment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -677,8 +563,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -689,11 +577,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
         
           
           <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
@@ -709,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             Optional Plugins
@@ -743,10 +631,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../form_handling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Form Handling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -757,6 +667,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#csrf-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSRF Protection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSRF Protection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-the-csrf-token-to-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding the CSRF token to forms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-automatically" class="md-nav__link">
+    <span class="md-ellipsis">
+      What happens automatically
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-token-generation-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom token generation (advanced)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Memory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Form Errors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works-under-the-hood" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works under the hood
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -831,7 +848,7 @@
 
 
   
-    <a href="https://github.com/nixphp/framework/edit/master/docs/configuration.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/nixphp/framework/edit/master/docs/form_handling.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -839,145 +856,70 @@
   
 
 
-<h1 id="configuration">Configuration</h1>
-<p>NixPHP provides a simple yet flexible configuration system based on <code>.env</code> files, a lightweight environment service, and a powerful configuration loader.</p>
-<p>You can easily manage different settings for local development, staging, and production environments.</p>
+<h1 id="form-handling">Form Handling</h1>
+<p>The <code>nixphp/form</code> plugin adds form input helpers and CSRF protection to your NixPHP application.
+It makes working with POST requests and form validation simpler and safer.</p>
 <hr />
-<h2 id="using-env-files">Using <code>.env</code> Files</h2>
-<p>NixPHP can automatically load environment variables from a <code>.env</code> file placed in the project root.</p>
-<pre><code class="language-dotenv">APP_ENV=local
-APP_DEBUG=true
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=secret
+<h2 id="csrf-protection">CSRF Protection</h2>
+<p>The plugin adds a listener to all <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> requests.
+Unless the request contains an <code>Authorization</code> header (e.g. for APIs), a valid CSRF token is required.</p>
+<h3 id="adding-the-csrf-token-to-forms">Adding the CSRF token to forms</h3>
+<p>Use the <code>csrf_token()</code> helper to insert a token into your form:</p>
+<pre><code class="language-php">&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;_csrf&quot; value=&quot;&lt;?= csrf_token() ?&gt;&quot;&gt;
+    &lt;!-- your fields --&gt;
+&lt;/form&gt;
 </code></pre>
+<h3 id="what-happens-automatically">What happens automatically</h3>
 <ul>
-<li>Each line defines a key-value pair.</li>
-<li>Lines starting with <code>#</code> are treated as comments.</li>
-<li>Values can be referenced inside configuration files or application code.</li>
+<li>The plugin listens to the <code>controller.calling</code> event.</li>
+<li>It checks if a valid CSRF token is present.</li>
+<li>If the token is missing or invalid, the request is aborted with status code <strong>400</strong>.</li>
 </ul>
-<p>The <code>.env</code> file is loaded automatically during the bootstrap phase.</p>
+<p>You don’t need to register anything manually.</p>
 <hr />
-<h2 id="accessing-environment-variables">Accessing Environment Variables</h2>
-<p>You can access environment variables anywhere in your code using the <code>env()</code> helper:</p>
-<pre><code class="language-php">$host = env('DB_HOST', 'localhost');
+<h3 id="custom-token-generation-advanced">Custom token generation (advanced)</h3>
+<p>In rare cases, you may want to <strong>manually generate</strong> a token, e.g. for an external JS request or API fallback:</p>
+<pre><code class="language-php">$token = guard()-&gt;csrf()-&gt;generate();
 </code></pre>
-<ul>
-<li>The first argument is the environment variable name.</li>
-<li>The second argument is an optional default value if the variable is not set.</li>
-</ul>
+<p>This ensures a valid token is created and stored in the session.</p>
 <hr />
-<h2 id="environment-detection">Environment Detection</h2>
-<p>NixPHP includes a small <code>Environment</code> service to detect the current application environment.</p>
-<p>It supports four predefined environments:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Typical Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>local</code></td>
-<td style="text-align: left;">Local development machine</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>staging</code></td>
-<td style="text-align: left;">Preview system before going live</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>production</code></td>
-<td style="text-align: left;">Live/real system</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>testing</code></td>
-<td style="text-align: left;">Automated test environment</td>
-</tr>
-</tbody>
-</table>
-<p>You can check the environment using helper methods:</p>
-<pre><code class="language-php">if (env()-&gt;isLocal()) {
-    ini_set('display_errors', '1');
-}
-
-if (env()-&gt;isProduction()) {
-    ini_set('display_errors', '0');
-}
+<h2 id="input-memory">Input Memory</h2>
+<p>If you want to repopulate form input after a failed submission (e.g. validation failed),
+you can use the <code>memory()</code> helper:</p>
+<pre><code class="language-php">&lt;input type=&quot;text&quot; name=&quot;email&quot; value=&quot;&lt;?= memory('email') ?&gt;&quot;&gt;
 </code></pre>
-<p>Available methods:</p>
+<p>This function checks if the user submitted a value for this field in the last request and fills it in.</p>
+<hr />
+<h2 id="form-errors">Form Errors</h2>
+<p>When using a validation system (e.g. the one provided by <code>nixphp/form</code>),
+you can use the <code>formError()</code> helper to display validation messages:</p>
+<pre><code class="language-php">&lt;?php if ($error = formError('email')): ?&gt;
+    &lt;p class=&quot;error&quot;&gt;&lt;?= $error ?&gt;&lt;/p&gt;
+&lt;?php endif; ?&gt;
+</code></pre>
+<p>The helper will return the error message for the given field, if present.</p>
+<hr />
+<h2 id="how-it-works-under-the-hood">How it works under the hood</h2>
 <ul>
-<li><code>isLocal()</code></li>
-<li><code>isStaging()</code></li>
-<li><code>isProduction()</code></li>
-<li><code>isTesting()</code></li>
+<li>The plugin hooks into the event system to run a CSRF check before each controller.</li>
+<li>The token is stored in the session using the <code>nixphp/session</code> plugin.</li>
+<li>Input data is preserved using the memory service (also session-based).</li>
+<li>Helpers like <code>memory()</code> and <code>csrf_token()</code> are globally available in views.</li>
 </ul>
 <hr />
-<h2 id="application-configuration">Application Configuration</h2>
-<p>NixPHP loads application settings through a lightweight <code>Config</code> class.</p>
-<p>You can organize configuration into arrays and load them through the container.</p>
-<p>A typical configuration file might look like this:</p>
-<pre><code class="language-php">return [
-    'name' =&gt; 'My App',
-    'api' =&gt; [
-        'key' =&gt; 'ENV:API_KEY',
-        'url' =&gt; 'https://api.example.com',
-    ],
-];
-</code></pre>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li>Values prefixed with <code>ENV:</code> will be automatically resolved from environment variables.</li>
-<li>Nested arrays are supported.</li>
+<li><code>nixphp/session</code> must be installed and active
+  (<code>nixphp/form</code> depends on it for CSRF and memory handling)</li>
 </ul>
-<hr />
-<h2 id="accessing-configuration-values">Accessing Configuration Values</h2>
-<p>You can access configuration values using the <code>config()</code> helper:</p>
-<pre><code class="language-php">// Get a full configuration array
-$fullConfig = config();
-
-// Get a single config value
-$appName = config('name');
-
-// Access nested configuration using &quot;namespace&quot; syntax
-$apiKey = config('api:key');
-
-// Provide a default value if the key is not found
-$apiUrl = config('api:url', 'https://default.example.com');
-</code></pre>
-<ul>
-<li>If the key contains a colon <code>:</code>, it is treated as a namespace separator.</li>
-<li>Nested configuration is traversed automatically.</li>
-</ul>
-<hr />
-<h2 id="internals-how-configuration-works">Internals: How Configuration Works</h2>
-<p>The <code>Config</code> class:</p>
-<ul>
-<li>Accepts an array on construction.</li>
-<li>Resolves all <code>ENV:</code> placeholders recursively.</li>
-<li>Provides <code>get($key, $default)</code> and <code>all()</code> methods for access.</li>
-<li>Supports simple "namespace" lookups via <code>:</code> syntax.</li>
-</ul>
-<p>The <code>config()</code> helper fetches the instance from the container and allows quick access anywhere in your code.</p>
-<hr />
-<h2 id="example-setting-error-display-based-on-environment">Example: Setting Error Display Based on Environment</h2>
-<p>You can configure error reporting inside <code>bootstrap.php</code> depending on the current environment:</p>
-<pre><code class="language-php">if (env()-&gt;isProduction()) {
-    ini_set('display_errors', '0');
-    error_reporting(E_ALL &amp; ~E_DEPRECATED &amp; ~E_NOTICE);
-} else {
-    ini_set('display_errors', '1');
-    error_reporting(E_ALL);
-}
-</code></pre>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Use <code>.env</code> files to store environment-specific settings.</li>
-<li>Use the <code>env()</code> helper to access variables with optional default values.</li>
-<li>The <code>Environment</code> service allows checking the current environment cleanly.</li>
-<li>Use configuration arrays with optional <code>ENV:</code> references.</li>
-<li>Access configuration values easily with the <code>config()</code> helper.</li>
-<li>Configuration supports nested access via "namespace" keys (e.g., <code>api:key</code>).</li>
+<li>✅ <code>csrf_token()</code> inserts a secure token in forms</li>
+<li>✅ CSRF validation is automatic for all unsafe methods</li>
+<li>✅ <code>memory()</code> restores previous user input after validation</li>
+<li>✅ <code>formError()</code> shows error messages for specific fields</li>
 </ul>
 
 
