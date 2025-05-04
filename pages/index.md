@@ -11,3 +11,4 @@ NixPHP is built for developers who want:
 It provides essential features like routing, controller dispatching, view rendering, database access, session handling, and smart response handling — without unnecessary overhead.
 
 Use NixPHP as a lightweight foundation for APIs, web applications, or any PHP project that values **clarity**, **speed**, and **simplicity**.
+

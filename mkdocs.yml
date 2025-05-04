@@ -2,7 +2,7 @@ site_name: NixPHP
 site_description: A modern, minimalist PHP microframework
 theme:
   name: material
-  logo: assets/nixphp-logo-small.png
+  logo: assets/nixphp-logo-small-square.png
   palette:
     - scheme: default
       primary: grey
