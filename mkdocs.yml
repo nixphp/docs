@@ -46,8 +46,10 @@ nav:
   - Best Practices: best_practices.md
   - Optional Plugins:
     - Views: views.md
+    - Form Handling: form_handling.md
     - Database: database.md
     - Session: sessions.md
+
 
 repo_url: https://github.com/nixphp/framework
 repo_name: nixphp/framework
