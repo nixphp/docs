@@ -2,7 +2,7 @@
 
 NixPHP provides a simple yet flexible configuration system based on `.env` files, a lightweight environment service, and a powerful configuration loader.
 
-You can easily manage different settings for local development, staging, and production environments.
+You can manage different settings for local development, staging, and production environments.
 
 ---
 
