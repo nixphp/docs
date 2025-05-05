@@ -93,23 +93,48 @@ plugin()->getMeta('bootstraps');
 For internal use or debugging only – no need to register anything yourself.
 
 ---
-
-## Example Plugin: Error Views
-
-```plaintext
-my-error-plugin/
+## Example Plugin: Event Listener
+``` plaintext
+my-event-plugin/
 ├── app/
-│   └── views/
-│       └── errors/
-│           ├── 404.phtml
-│           └── 500.phtml
+│   └── Listeners/
+│       └── UserListener.php
 └── bootstrap.php
 ```
+**UserListener.php:**
+``` php
+namespace MyEventPlugin\Listeners;
 
-Usage:
+class UserListener
+{
+    public function onUserRegistered($user)
+    {
+        // Log registration, send welcome email, etc.
+        logger()->info('New user registered: ' . $user->email);
+    }
+}
+```
+**bootstrap.php:**
+``` php
+use MyEventPlugin\Listeners\UserListener;
+use function NixPHP\event;
 
-```php
-render('errors.404');
+// Register the event listener
+$listener = new UserListener();
+event()->listen('user.registered', [$listener, 'onUserRegistered']);
+
+// You can also use closure-based listeners
+event()->listen('user.login', function($user) {
+    logger()->info('User logged in: ' . $user->email);
+});
+```
+Usage in the main application:
+``` php
+use function NixPHP\event;
+
+// After successful user registration:
+$user = new User(); // Your user object
+event()->dispatch('user.registered', $user);
 ```
 
 ---
@@ -160,8 +185,7 @@ Visit: `http://yourapp.local/plugin-hello`
 ## View Resolution Order
 
 1. App `app/views/`
-2. Plugins `plugin/app/views/`
-3. Framework `core/Resources/views/`
+2. Plugins `app/views/`
 
 ---
 

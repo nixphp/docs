@@ -253,6 +253,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -264,6 +277,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -723,14 +791,38 @@
 
 <h1 id="introduction">Introduction</h1>
 <p>Welcome to <strong>NixPHP</strong> — a minimalist, modern PHP microframework.</p>
-<p>NixPHP is built for developers who want:</p>
+<h2 id="overview">Overview</h2>
+<p>NixPHP is a lightweight PHP framework that provides the essential tools for web development while remaining simple and flexible. It adheres to modern PHP standards and gives developers full control over their application architecture.</p>
+<h2 id="target-audience">Target Audience</h2>
+<p>NixPHP is designed for developers who need:</p>
 <ul>
 <li>Full control over their application's structure</li>
 <li>Minimal dependencies and maximum flexibility</li>
-<li>Native PHP strengths combined with modern standards (PSR-3, PSR-4, PSR-7, PSR-11, PSR-18)</li>
+<li>Native PHP capabilities with PSR compliance (PSR-3, PSR-4, PSR-7, PSR-11, PSR-18)</li>
+<li>A framework that stays out of the way while providing necessary functionality</li>
 </ul>
-<p>It provides essential features like routing, controller dispatching, view rendering, database access, session handling, and smart response handling — without unnecessary overhead.</p>
-<p>Use NixPHP as a lightweight foundation for APIs, web applications, or any PHP project that values <strong>clarity</strong>, <strong>speed</strong>, and <strong>simplicity</strong>.</p>
+<h2 id="core-features">Core Features</h2>
+<p>NixPHP includes:</p>
+<ul>
+<li><strong>Routing</strong> for URL handling and HTTP method mapping</li>
+<li><strong>Controllers</strong> for organizing request handling logic</li>
+<li><strong>View System</strong> with layout support and template inheritance</li>
+<li><strong>Database Access</strong> through straightforward PDO integration</li>
+<li><strong>Session Management</strong> for state handling</li>
+<li><strong>Response Handling</strong> with content negotiation</li>
+<li><strong>Plugin System</strong> for extending functionality</li>
+<li><strong>PSR Compatibility</strong> for integration with the PHP ecosystem</li>
+</ul>
+<p>All components are designed to be minimal, with no unnecessary abstractions or dependencies.</p>
+<h2 id="design-principles">Design Principles</h2>
+<p>NixPHP focuses on providing just enough structure without imposing architectural decisions. The framework:</p>
+<ul>
+<li>Uses plain PHP wherever possible</li>
+<li>Avoids complex abstractions and magic methods</li>
+<li>Keeps dependencies to a minimum</li>
+<li>Follows PSR standards for interoperability</li>
+</ul>
+<p>Use NixPHP as a foundation for APIs, web applications, or any PHP project that values <strong>clarity</strong>, <strong>speed</strong>, and <strong>simplicity</strong>.</p>
 
 
 
