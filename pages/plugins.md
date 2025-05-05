@@ -32,9 +32,9 @@ Below is a minimal but complete `composer.json` for a NixPHP plugin:
 
 ```json
 {
-  "name": "vendor/NixPHP-plugin-example",
+  "name": "vendor/nixphp-plugin-example",
   "description": "Skeleton for your first plugin when using NixPHP",
-  "type": "NixPHP-plugin",
+  "type": "nixphp-plugin",
   "license": "MIT",
   "authors": [
     {
@@ -57,7 +57,7 @@ Below is a minimal but complete `composer.json` for a NixPHP plugin:
 ```
 
 > ✅ Important:
-> - `"type": "NixPHP-plugin"` is required for discovery.
+> - `"type": "nixphp-plugin"` is required for discovery.
 > - The namespace (e.g. `MyPlugin\\`) must match your plugin classes location.
 
 Run:
@@ -72,7 +72,7 @@ To ensure your classes are properly registered.
 
 ## Automatic Discovery
 
-Plugins are discovered via Composer using the package `"type": "NixPHP-plugin"`. Once installed, NixPHP will:
+Plugins are discovered via Composer using the package `"type": "nixphp-plugin"`. Once installed, NixPHP will:
 
 - Load `bootstrap.php`
 - Merge `app/config.php`
@@ -176,7 +176,7 @@ Visit: `http://yourapp.local/plugin-hello`
 ## Summary
 
 - Plugins mimic the structure of the main app (`app/config.php`, `app/views/`, `Controllers/`)
-- Auto-loaded by Composer if `"type": "NixPHP-plugin"` is set
+- Auto-loaded by Composer if `"type": "nixphp-plugin"` is set
 - Can register routes, logic, templates, config – with no extra steps
 - Can be overridden by the app cleanly
 - `plugin()` helper gives access to metadata for advanced use
