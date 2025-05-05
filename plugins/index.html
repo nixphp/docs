@@ -859,9 +859,9 @@
 <h2 id="example-composerjson">🛠 Example <code>composer.json</code></h2>
 <p>Below is a minimal but complete <code>composer.json</code> for a NixPHP plugin:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><span class="p">{</span>
-</span><span id="__span-1-2"><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vendor/NixPHP-plugin-example&quot;</span><span class="p">,</span>
+</span><span id="__span-1-2"><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vendor/nixphp-plugin-example&quot;</span><span class="p">,</span>
 </span><span id="__span-1-3"><span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Skeleton for your first plugin when using NixPHP&quot;</span><span class="p">,</span>
-</span><span id="__span-1-4"><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NixPHP-plugin&quot;</span><span class="p">,</span>
+</span><span id="__span-1-4"><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nixphp-plugin&quot;</span><span class="p">,</span>
 </span><span id="__span-1-5"><span class="w">  </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
 </span><span id="__span-1-6"><span class="w">  </span><span class="nt">&quot;authors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-1-7"><span class="w">    </span><span class="p">{</span>
@@ -884,7 +884,7 @@
 </span></code></pre></div>
 <blockquote>
 <p>✅ Important:
-- <code>"type": "NixPHP-plugin"</code> is required for discovery.
+- <code>"type": "nixphp-plugin"</code> is required for discovery.
 - The namespace (e.g. <code>MyPlugin\\</code>) must match your plugin classes location.</p>
 </blockquote>
 <p>Run:</p>
@@ -893,7 +893,7 @@
 <p>To ensure your classes are properly registered.</p>
 <hr />
 <h2 id="automatic-discovery">Automatic Discovery</h2>
-<p>Plugins are discovered via Composer using the package <code>"type": "NixPHP-plugin"</code>. Once installed, NixPHP will:</p>
+<p>Plugins are discovered via Composer using the package <code>"type": "nixphp-plugin"</code>. Once installed, NixPHP will:</p>
 <ul>
 <li>Load <code>bootstrap.php</code></li>
 <li>Merge <code>app/config.php</code></li>
@@ -969,7 +969,7 @@
 <h2 id="summary">Summary</h2>
 <ul>
 <li>Plugins mimic the structure of the main app (<code>app/config.php</code>, <code>app/views/</code>, <code>Controllers/</code>)</li>
-<li>Auto-loaded by Composer if <code>"type": "NixPHP-plugin"</code> is set</li>
+<li>Auto-loaded by Composer if <code>"type": "nixphp-plugin"</code> is set</li>
 <li>Can register routes, logic, templates, config – with no extra steps</li>
 <li>Can be overridden by the app cleanly</li>
 <li><code>plugin()</code> helper gives access to metadata for advanced use</li>
