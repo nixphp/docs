@@ -30,8 +30,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
   - pymdownx.snippets
-extra_css:
-  - assets/extra.css
+#extra_css:
+#  - assets/extra.css
 
 nav:
   - Introduction: index.md
